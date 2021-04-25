@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>03 - Редактировать заявку</title>
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic-ext"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body class="body--dashboard">
+        <!-- left-panel -->
+        <div class="left-panel blue-skin">
+            <!-- Logo -->
+            <div class="left-panel__logo">
+                <div class="left-panel__logo-title">CRM заявки</div>
+                <div class="left-panel__logo-subtitle">
+                    учебный проект webcademy
+                </div>
+            </div>
+            <!-- // Logo -->
+            <!-- User -->
+            <div class="left-panel__user clearfix">
+                <div class="left-panel__user-photo">
+                    <img src="img/avatars/avatar-128.jpg" alt="Avatar" />
+                </div>
+                <div class="left-panel__user-name">Петр <br />Васильевич</div>
+            </div>
+            <!-- // User -->
+            <!-- Navigation 1 -->
+            <div data-counter-wrapper class="left-panel__navigation">
+                <div class="left-panel__navigation-title">
+                    Общее количество заявок
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" >Все вместе
+                            <div data-counter-all-applications class="badge badge-counter-color">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Новые
+                            <div data-counter-new-applications class="badge badge-counter-color">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">В работе
+                            <div data-counter-in-work-applications class="badge badge-counter-color">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Завершённые
+                            <div data-counter-complete-applications class="badge badge-counter-color">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Архив
+                            <div data-counter-archive-applications class="badge badge-counter-color">0</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // Navigation 1 -->
+            <!-- Navigation 2 -->
+            <div class="left-panel__navigation">
+                <div class="left-panel__navigation-title">
+                    Продукты
+                </div>
+                <ul>
+                    <li><a href="#">Активные</a></li>
+                    <li><a href="#">Архив</a></li>
+                </ul>
+            </div>
+            <!-- // Navigation 2 -->
+            <!-- Navigation 3 -->
+            <div class="left-panel__navigation left-panel__navigation--no-line">
+                <ul>
+                    <li><a href="#">Выход</a></li>
+                </ul>
+            </div>
+            <!-- // Navigation 3 -->
+        </div>
+        <!-- // left-panel -->
+
+        <!-- main-wrapper -->
+        <div class="main-wrapper">
+            <div class="container-fluid">
+                <!-- row -->
+                <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                        <div class="admin-heading-1">Работа с заявкой</div>
+                    </div>
+                    <div class="col text-right">
+                        <a href="02-crm-all-bids.html" class="btn btn-link"
+                            ><-- Вернуться назад</a
+                        >
+                    </div>
+                </div>
+                <!-- // row -->
+                <!-- row -->
+                <div class="row">
+                    <!-- col -->
+                    <div class="col">
+                        <form action="">
+                            <!-- card -->
+                            <div class="card mb-4">
+                                <div class="card-header">Данные о заявке</div>
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <strong>ID:</strong>
+                                        </div>
+                                        <div data-ID class="col">Заявка №1</div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <strong>Дата создания:</strong>
+                                        </div>
+                                        <div data-time-of-creation class="col">
+                                            2020-04-20 13:52:13
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <strong>Продукт:</strong>
+                                        </div>
+                                        <div class="col">
+                                            <select data-products class="custom-select" id="inputGroupSelect01">
+                                                <option value="Курс по верстке">Курс по верстке</option>
+                                                <option value="Курс по JavaScript">Курс по JavaScript</option>
+                                                <option value="Курс по VUE JS">Курс по VUE JS</option>
+                                                <option value="Курс по PHP">Курс по PHP</option>
+                                                <option value="Курс по WordPress">Курс по WordPress</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <strong>Имя:</strong>
+                                        </div>
+                                        <div class="col">
+                                            <input data-name
+                                                type="text"
+                                                class="form-control"
+                                                value="Петр Сергеевич"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <strong>Email:</strong>
+                                        </div>
+                                        <div class="col">
+                                            <input data-email
+                                                type="text"
+                                                class="form-control"
+                                                value="info@inbox.ru"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <strong>Телефон:</strong>
+                                        </div>
+                                        <div class="col">
+                                            <input data-telephone
+                                                type="text"
+                                                class="form-control"
+                                                value="+7 (903) 555-77-55"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <div class="col-md-2">
+                                            <strong>Статус заявки:</strong>
+                                        </div>
+                                        <div class="col">
+                                            <!-- Мой селект -->
+                                            <select data-status class="custom-select" id="inputGroupSelect01">
+                                                <option value="Выберите..." selected>Выберите...</option>
+                                                <option value="Новые">Новая</option>
+                                                <option value="В работе">В работе (Ожидается оплата)</option>
+                                                <option value="Завершённые">Завершена (Оплата получена)</option>
+                                            </select>
+                                            <!-- // Мой селект -->
+
+                                            
+                                            <!-- Оригинальный селект из задания -->
+                                            <!-- <select
+                                                class="custom-select"
+                                                id="inputGroupSelect01"
+                                            >
+                                                <option selected=""
+                                                    >Выберите...</option
+                                                >
+                                                <option value="1">Новая</option>
+                                                <option value="2"
+                                                    >В работе</option
+                                                >
+                                                <option value="3"
+                                                    >Ожидается оплата</option
+                                                >
+                                                <option value="4"
+                                                    >Завершена</option
+                                                >
+                                                <option value="5">Отказ</option>
+                                            </select> -->
+                                            <!-- Оригинальный селект из задания -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //card -->
+                            <div class="row justify-content-between">
+                                <div class="col">
+                                    <!-- <a
+                                        href="02-crm-all-bids.html"
+                                        type="button"
+                                        class="btn btn-primary"
+                                        >Сохранить изменения</a
+                                    > -->
+                                    <a
+                                    data-save-changes
+                                    type="button"
+                                    class="btn btn-primary"
+                                    >Сохранить изменения</a
+                                >
+                                </div>
+                                <div class="col text-right">
+                                    <a  data-delete-to-archive
+                                        href="02-crm-all-bids.html"
+                                        type="button"
+                                        class="btn btn-dark"
+                                        >Удалить в архив</a
+                                    >
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- //col -->
+                </div>
+                <!-- //row -->
+            </div>
+        </div>
+        <!-- // main-wrapper -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!------------------------------- ВСПЛЫВАЮЩИЕ уведомления.  ПЛАГИН -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+        <script src="js/model.js"></script>
+        <script src="js/edit.view.js"></script>
+        <script src="js/edit.controller.js"></script>
+
+    </body>
+</html>
